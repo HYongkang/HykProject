@@ -1,0 +1,58 @@
+<?XML VERSION="1.0" ENCODING="UTF-8"?>
+<Window SIZE="500,340" SIZEBOX="5,5,5,5" mininfo="500,340" roundcorner="30,30"  caption="0,0,0,40" >
+  <VerticalLayout >
+   <HorizontalLayout  name="caption" bkimage="caption.jpg" inset="0,2,0,0"  height="35" >
+     <!--<control width="40"/>-->
+     <Text name="help" text="{u}{a}帮助{/a}{/u}" textcolor="#ffff0033" padding="20,12,0,0" showhtml="true"/>
+     <control />
+     <button name="minbtn" normalimage="file='minbtn-normal.png'" pushedimage="file='minbtn-pushed.png'" tooltip="最小化"  pos="0,0,32,32"/>
+     <button name="maxbtn" normalimage="file='maxbtn-normal.png'" pushedimage="file='maxbtn-pushed.png'" tooltip="最大化"  pos="0,0,32,32"/>
+     <Button name="restorebtn" visible="false" normalimage="restorebtn-normal.png"  pushedimage="restorebtn-pushed.png" tooltip="取消全屏" pos="0,0,32,32" />
+     <button name="closebtn" normalimage="file = 'close-normal.png'" pushedimage="file='close-pushed.png'" tooltip="关闭"   pos="0,0,32,32"/>
+     <control  width="15"/>
+   </HorizontalLayout>
+   
+   <VerticalLayout bkcolor="#ffffffff" bkimage="bkimage.jpg">
+
+     <ActiveX name="flash" clsid="{D27CDB6E-AE6D-11CF-96B8-444553540000}" mouse="false" minheight="70" minwidth="500" maxheight="300"/>
+     <!--<GifAnim name="gif" bkimage="gif.gif" autoplay="true" autosize="true" width="100" height="100" />-->
+     <HorizontalLayout name="client" height="300">
+      <control />
+       
+      <VerticalLayout width ="100">
+        <control bordercolor="#ff000000" bordersize="1" borderround="100,100" bkimage="头像.jpg" pos="0,0,100,100" />
+        <control />
+      </VerticalLayout>
+
+       <control width="15"/>
+       
+      <VerticalLayout width ="32">
+        <control height="20"/>
+        <control bkimage="账号.png" pos="0,0,32,32"/>
+        <control height="3"/>
+        <control bkimage="密码.png" pos="0,0,32,32"/>
+        <control />
+      </VerticalLayout>
+       
+      <VerticalLayout minwidth="130" maxwidth="300">
+        <control height="28"/>
+          <Edit name="input_account" maxchar="11" transparent="true" height="25"  bordercolor="#C6CFD8"  bkimage="file='search_bg.png'  corner='1,1,1,1'" tooltip="请在这里输入您的账号"/>
+        <control height="8"/>
+         <Edit name="input_password" maxchar="21" transparent="true" height="25"  password="true" bordercolor="#C6CFD8"  bkimage="file='search_bg.png'  corner='1,1,1,1'" tooltip="请在这里输入您的密码"/>
+        <control />
+      </VerticalLayout>
+
+      <control width="10"/>
+       
+      <VerticalLayout width="64">
+        <control height="20"/>
+        <button name="btn_search" bkimage="login_normal.png" hotimage="login_hot.png" pushedimage="login_pushed.png" pos="0,0,64,64"/>
+        <control />
+      </VerticalLayout>
+       <control />
+     </HorizontalLayout>
+     
+  </VerticalLayout>
+ </VerticalLayout>
+
+ </Window>

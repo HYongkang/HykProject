@@ -1,0 +1,35 @@
+<?XML VERSION="1.0" ENCODING="UTF-8"?>
+<Window SIZE="500,340" SIZEBOX="5,5,5,5" mininfo="500,340" roundcorner="30,30"  caption="0,0,0,40" >
+  <VerticalLayout >
+    <HorizontalLayout  name="caption" bkimage="caption.jpg" inset="0,2,0,0"  height="35" >
+      <!--<control width="40"/>-->
+      <Text name="help" text="{u}{a}帮助{/a}{/u}" textcolor="#ffff0033" padding="20,12,0,0" showhtml="true"/>
+      <control />
+      <button name="minbtn" normalimage="file='minbtn-normal.png'" pushedimage="file='minbtn-pushed.png'" tooltip="最小化"  pos="0,0,32,32"/>
+      <button name="maxbtn" normalimage="file='maxbtn-normal.png'" pushedimage="file='maxbtn-pushed.png'" tooltip="最大化"  pos="0,0,32,32"/>
+      <Button name="restorebtn" visible="false" normalimage="restorebtn-normal.png"  pushedimage="restorebtn-pushed.png" tooltip="取消全屏" pos="0,0,32,32" />
+      <button name="closebtn" normalimage="file = 'close-normal.png'" pushedimage="file='close-pushed.png'" tooltip="关闭"   pos="0,0,32,32"/>
+      <control  width="15"/>
+    </HorizontalLayout>
+
+    <VerticalLayout bkcolor="#ffffffff" bkimage="bkimage.jpg">
+
+      <ActiveX name="flash" clsid="{D27CDB6E-AE6D-11CF-96B8-444553540000}" mouse="false" minheight="70" minwidth="500" maxheight="300"/>
+   <VerticalLayout >
+     <HorizontalLayout name="头像">
+      <control width="100" />
+      <control bordercolor="#ff000000" bordersize="1" borderround="100,100" bkimage="头像.jpg" pos="0,0,100,100"/>
+     </HorizontalLayout>
+     <control />
+      <HorizontalLayout name="账号密码">
+      <control />
+      <control bkimage="账号.png" pos="0,0,32,32"/>
+      <control width="5" />
+      <Edit name="input_account" padding="0,7,0,0" maxchar="11" transparent="true" height="25"  bordercolor="#C6CFD8"  bkimage="file='search_bg.png' corner='1,1,1,1'"  tooltip="请在这里输入您的账号"/>
+      <control />
+    </HorizontalLayout>
+   </VerticalLayout>
+ </VerticalLayout>
+</VerticalLayout>
+
+</Window>

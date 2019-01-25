@@ -1,0 +1,17 @@
+account       hyk
+bankid       11
+bankname       高中语文
+categoryId       2345
+categoryName       高中数学文科库
+code       1
+errorNum       1
+ledgeId       2346
+ledgeName       必修1
+schoolid       y5hjacyjoilgmnbjfwaffa
+siteurl       http://www.yixuexiao.cn:85
+status       true
+stype       1,3
+uid       4na7ah2jq75kwp5yyd9izg123
+userType       0
+username       黄永康
+登录时间：2019/01/25 17:04:09 Friday
